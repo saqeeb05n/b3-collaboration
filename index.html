@@ -1,85 +1,52 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
-<html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <title>Login and Registration Form in HTML | CodingNepal</title>
-      <link rel="stylesheet" href="style.css">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
-   <body>
-      <div class="wrapper">
-         <div class="title-text">
-            <div class="title login">
-               Login Form
-            </div>
-            <div class="title signup">
-               Signup Form
-            </div>
-         </div>
-         <div class="form-container">
-            <div class="slide-controls">
-               <input type="radio" name="slide" id="login" checked>
-               <input type="radio" name="slide" id="signup">
-               <label for="login" class="slide login">Login</label>
-               <label for="signup" class="slide signup">Signup</label>
-               <div class="slider-tab"></div>
-            </div>
-            <div class="form-inner">
-               <form action="#" class="login">
-                  <div class="field">
-                     <input type="text" placeholder="Email Address" required>
-                  </div>
-                  <div class="field">
-                     <input type="password" placeholder="Password" required>
-                  </div>
-                  <div class="pass-link">
-                     <a href="#">Forgot password?</a>
-                  </div>
-                  <div class="field btn">
-                     <div class="btn-layer"></div>
-                     <input type="submit" value="Login">
-                  </div>
-                  <div class="signup-link">
-                     Not a member? <a href="">Signup now</a>
-                  </div>
-               </form>
-               <form action="#" class="signup">
-                  <div class="field">
-                     <input type="text" placeholder="Email Address" required>
-                  </div>
-                  <div class="field">
-                     <input type="password" placeholder="Password" required>
-                  </div>
-                  <div class="field">
-                     <input type="password" placeholder="Confirm password" required>
-                  </div>
-                  <div class="field btn">
-                     <div class="btn-layer"></div>
-                     <input type="submit" value="Signup">
-                  </div>
-               </form>
-            </div>
-         </div>
-      </div>
-      <script>
-         const loginText = document.querySelector(".title-text .login");
-         const loginForm = document.querySelector("form.login");
-         const loginBtn = document.querySelector("label.login");
-         const signupBtn = document.querySelector("label.signup");
-         const signupLink = document.querySelector("form .signup-link a");
-         signupBtn.onclick = (()=>{
-           loginForm.style.marginLeft = "-50%";
-           loginText.style.marginLeft = "-50%";
-         });
-         loginBtn.onclick = (()=>{
-           loginForm.style.marginLeft = "0%";
-           loginText.style.marginLeft = "0%";
-         });
-         signupLink.onclick = (()=>{
-           signupBtn.click();
-           return false;
-         });
-      </script>
-   </body>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>FIRST_PAGE</title>
+        <link rel="stylesheet" href="1.css"/>
+    </head>
+    <body>
+        <nav class="w3-bar w3-black">
+            <a href="#home" class="w3-button w3-bar-item">Home</a>
+            <a href="#band" class="w3-button w3-bar-item">Band</a>
+            <a href="#tour" class="w3-button w3-bar-item">Tour</a>
+            <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+          </nav>
+          <section>
+            <img class="mySlides" src="img_la.jpg" style="width:100%">
+            <img class="mySlides" src="img_ny.jpg" style="width:100%">
+            <img class="mySlides" src="img_chicago.jpg" style="width:100%">
+          </section>
+          <section class="w3-container w3-center" style="max-width:600px">
+            <h2 class="w3-wide">THE BAND</h2>
+            <p class="w3-opacity"><i>We love music</i></p>
+          </section>
+          <section class="w3-row-padding w3-center w3-light-grey">
+            <article class="w3-third">
+              <p>John</p>
+              <img src="img_bandmember.jpg" alt="Random Name" style="width:100%">
+            </article>
+            <article class="w3-third">
+              <p>Paul</p>
+              <img src="img_bandmember.jpg" alt="Random Name" style="width:100%">
+            </article>
+            <article class="w3-third">
+              <p>Ringo</p>
+              <img src="img_bandmember.jpg" alt="Random Name" style="width:100%">
+            </article>
+          </section>
+          <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+            <a href="#"><i class="fa fa-facebook-official"></i></a>
+            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-flickr"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <p class="w3-medium">
+              Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+            </p>
+          </footer>
+          <script src="1.js"></script>
+          
+                              
+    </body>
 </html>
